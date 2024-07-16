@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<NavBar />
+<HomeSpread />
+<GradientTransition transHeight="150px" startColor="rgb(42,42,42)" endColor="rgb(0, 157, 255)" />
+<SkillsSection />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue';
+import HomeSpread from './components/HomeSpread.vue';
+import GradientTransition from './components/GradientTransition.vue';
+import SkillsSection from './components/SkillsSection.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    HomeSpread,
+    GradientTransition,
+    SkillsSection
   }
 }
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
 }
+
 </style>
