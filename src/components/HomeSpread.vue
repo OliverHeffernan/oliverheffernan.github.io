@@ -22,8 +22,8 @@ function onMouseMove(event)
     const winWidth = window.innerWidth;
     const winHeight = window.innerHeight;
 
-    const offsetX = (mouseX - winWidth/2)/(winWidth/2) * maxOffset;
-    const offsetY = (mouseY - winHeight/2)/(winHeight/2) * maxOffset;
+    const offsetX = -(mouseX - winWidth/2)/(winWidth/2) * maxOffset;
+    const offsetY = -(mouseY - winHeight/2)/(winHeight/2) * maxOffset;
 
     document.getElementById('nameContainer').style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 }
@@ -32,11 +32,11 @@ document.addEventListener('mousemove', onMouseMove);
 
 </script>
 
-<style>
+<style scoped>
 
 @media (pointer:coarse) {
     #nameContainer {
-        transition: all 0.4s;
+        transition: transform 0.4s;
     }
 }
 
@@ -46,14 +46,20 @@ document.addEventListener('mousemove', onMouseMove);
     text-align: center;
     display: grid;
     align-items: center;
+    overflow-x: hidden;
     background: linear-gradient(rgb(20,20,20), rgb(42, 42, 42));
 }
 
 #bigName {
     font-size: 70px;
-    background: -webkit-linear-gradient(45deg, rgb(0, 89, 255), rgb(74, 169, 228));
-    -webkit-background-clip: text;
+    background: -webkit-linear-gradient(45deg, rgb(0, 21, 255), rgb(74, 190, 228));
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: text-shadow 0.8s;
+}
+
+#bigName:hover {
+    text-shadow: 0px 0px 20px rgb(0, 70, 255);
 }
 
 </style>

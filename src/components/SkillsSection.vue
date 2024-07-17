@@ -14,7 +14,7 @@ export default {
 <template>
     
     <div id="section">
-    <h1>My Skills</h1>
+        <h1>My Skills</h1>
         <SkillContainer 
             icon="fa-brands fa-js" 
             title="JavaScript" 
@@ -44,14 +44,18 @@ export default {
 
 h1 {
     margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
 }
 
 #section {
     margin: 0;
-    padding: 50px;
-    width: calc(100vw - 100px);
     /*background-color: rgb(0, 157, 255);*/
-    background: linear-gradient(rgb(0, 157, 255), rgb(0, 120, 255));
+    background: linear-gradient(rgb(0,157,255), rgb(0,120,255));
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 </style>

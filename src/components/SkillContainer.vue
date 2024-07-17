@@ -26,6 +26,9 @@ export default {
     <i :class="icon"></i>
     <div>
         <h1> {{ title }} </h1>
+        <div id="underlineContainer">
+            <div id="underline"></div>
+        </div>
         <p v-html="blurb"></p>
     </div>
 </div>
@@ -34,19 +37,11 @@ export default {
 
 <style scoped>
 
-#container {
-    background-color: rgb(42, 42, 42);
-    padding: 50px;
-    margin-bottom: 50px;
-    border-radius: 50px;
-    align-items: center;
-    width: calc(100vw - 200px);
-    box-shadow: 0px 0px 10px black;
-}
 
 @media (max-width: 620px) {
     #container {
         display: block;
+        width: calc(100% - 200px);
     }
 
     i {
@@ -59,16 +54,69 @@ export default {
 @media (min-width: 620px) {
     #container {
         display: flex;
+        width: min(calc(100% - 200px), 800px);
     }
 
-    i {
+    #container i {
+        margin-right: 50px;
         text-align: left;
     }
 }
 
+@keyframes scroll-anim {
+    0% {
+        filter: blur(50px);
+        transform: scale(50%);
+    }
+    25% {
+        filter: blur(0);
+        transform: scale(100%);
+    }
+}
+
+#container {
+    background-color: rgb(42, 42, 42);
+    padding: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+    transition: filter transform 0.5s;
+
+    animation: scroll-anim linear;
+    animation-timeline: view();
+}
+
 #container i {
     font-size: 100px;
-    margin-right: 50px;
+}
+
+@keyframes underline-anim {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+#underlineContainer {
+    height: 6px;
+    background: linear-gradient(90deg, white, transparent);
+    transform-origin: 0 50%;
+    overflow-x: hidden;
+    border-radius: 3px;
+    margin-bottom: 5px;
+
+    animation: underline-anim linear;
+    animation-timeline: view();
+}
+
+#underline {
+    width: 100%;
+    height: 6%;
+    background: linear-gradient(90deg, white, transparent);
 }
 
 </style>

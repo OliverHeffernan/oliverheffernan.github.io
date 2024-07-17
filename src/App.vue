@@ -1,16 +1,21 @@
 <template>
+<ScrollAnimator />
 <NavBar />
 <HomeSpread />
 <GradientTransition transHeight="150px" startColor="rgb(42,42,42)" endColor="rgb(0, 157, 255)" />
 <SkillsSection />
+<GradientTransition transHeight="150px" startColor="rgb(0,120,255)" endColor="#00ffa2" />
+<ProjectSection />
 
 </template>
 
 <script>
+import ScrollAnimator from "./components/ScrollAnimator.vue";
 import NavBar from './components/NavBar.vue';
 import HomeSpread from './components/HomeSpread.vue';
 import GradientTransition from './components/GradientTransition.vue';
 import SkillsSection from './components/SkillsSection.vue';
+import ProjectSection from './components/ProjectSection.vue';
 
 export default {
   name: 'App',
@@ -18,7 +23,9 @@ export default {
     NavBar,
     HomeSpread,
     GradientTransition,
-    SkillsSection
+    SkillsSection,
+    ScrollAnimator,
+    ProjectSection
   }
 }
 </script>
