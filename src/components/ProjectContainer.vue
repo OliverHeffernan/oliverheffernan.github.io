@@ -16,6 +16,10 @@ export default {
         skillIcons: {
             type: Array,
             required: true
+        },
+        ghLink: {
+            type: String,
+            required: true
         }
     },
     components: {
@@ -28,7 +32,7 @@ export default {
 <template>
 
 <div class="projectContainer">
-    <h1> {{ title }}</h1>
+    <h2><a :href="ghLink" target="_blank"> {{ title }} </a></h2>
     <p> {{ blurb }}</p>
     <div class="icons">
         <SkillIcon
@@ -44,12 +48,26 @@ export default {
 <style>
 
 .projectContainer {
-    background-color: rgb(42,42,42);
-    padding: 50px;
-    border-radius: 50px;
+    /* background-color: rgb(42,42,42); */
+    background-color: white;
+    padding: 25px;
+    border-radius: 30px;
     box-shadow: 0px 0px 10px black;
     width: min(250px, calc(100vw - 250px));
     margin: 25px;
+    text-align: left;
+}
+
+.projectContainer a {
+    color: black;
+}
+
+.projectContainer p {
+    color: black;
+}
+
+.projectContainer i {
+    color: rgb(0, 100, 207);
 }
 
 </style>

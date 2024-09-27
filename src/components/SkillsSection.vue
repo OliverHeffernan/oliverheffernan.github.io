@@ -41,12 +41,16 @@ h1 {
   margin-bottom: 25px;
   width: 100%;
   text-align: center;
+  color: black;
+  margin-top: 25px;
 }
 
 #section {
   margin: 0;
   /*background-color: rgb(0, 157, 255);*/
-  background: linear-gradient(rgb(0, 157, 255), rgb(0, 120, 255));
+  /* background: linear-gradient(rgb(0, 157, 255), rgb(0, 120, 255)); */
+  /* background: linear-gradient(white, rgb(174, 174, 174)); */
+  background-color: white;
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;

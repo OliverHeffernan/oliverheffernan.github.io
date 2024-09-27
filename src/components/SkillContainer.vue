@@ -103,7 +103,7 @@ export default {
 
 #underlineContainer {
     height: 6px;
-    background: linear-gradient(90deg, white, transparent);
+    background: linear-gradient(90deg, rgb(0, 145, 255), transparent);
     transform-origin: 0 50%;
     overflow-x: hidden;
     border-radius: 3px;
@@ -116,7 +116,7 @@ export default {
 #underline {
     width: 100%;
     height: 6%;
-    background: linear-gradient(90deg, white, transparent);
+    background: linear-gradient(90deg,  rgb(0, 145, 255), transparent);
 }
 
 </style>

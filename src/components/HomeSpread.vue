@@ -52,7 +52,7 @@ document.addEventListener('mousemove', onMouseMove);
 
 #bigName {
     font-size: 70px;
-    background: -webkit-linear-gradient(45deg, rgb(0, 21, 255), rgb(74, 190, 228));
+    background: -webkit-linear-gradient(45deg, white, rgb(180, 180, 180));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: text-shadow 0.8s;
@@ -60,6 +60,10 @@ document.addEventListener('mousemove', onMouseMove);
 
 #bigName:hover {
     text-shadow: 0px 0px 20px rgb(0, 70, 255);
+}
+
+h2 {
+    color: rgb(0, 145, 255);
 }
 
 </style>
