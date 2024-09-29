@@ -76,9 +76,9 @@ export default {
 
 #container {
     background-color: rgb(42, 42, 42);
-    padding: 50px;
-    margin-bottom: 50px;
-    border-radius: 50px;
+    padding: 35px;
+    margin: 10px;
+    border-radius: 27px;
     align-items: center;
     box-shadow: 0px 0px 10px black;
     transition: filter transform 0.5s;

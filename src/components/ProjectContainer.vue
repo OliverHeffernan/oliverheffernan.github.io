@@ -31,8 +31,8 @@ export default {
 
 <template>
 
-<div class="projectContainer">
-    <h2><a :href="ghLink" target="_blank"> {{ title }} </a></h2>
+<a :href="ghLink" target="_blank" class="projectContainer">
+    <h2>{{ title }}</h2>
     <p> {{ blurb }}</p>
     <div class="icons">
         <SkillIcon
@@ -41,7 +41,7 @@ export default {
             :iconClass="skillIcon"
         />
     </div>
-</div>
+</a>
 
 </template>
 
@@ -50,16 +50,20 @@ export default {
 .projectContainer {
     /* background-color: rgb(42,42,42); */
     background-color: white;
-    padding: 25px;
-    border-radius: 30px;
+    padding: 22px;
+    border-radius: 15px;
     box-shadow: 0px 0px 10px black;
     width: min(250px, calc(100vw - 250px));
     margin: 25px;
     text-align: left;
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s;
 }
 
-.projectContainer a {
-    color: black;
+.projectContainer:hover {
+    scale: 1.05;
+    box-shadow:rgb(0, 100, 207) 0px 0px 20px;
 }
 
 .projectContainer p {

@@ -60,7 +60,7 @@ export default {
 
 #projectsSection {
     padding-top: 35px;
-    background: linear-gradient(rgb(20,20,20), rgb(42, 42, 42));
+    background: linear-gradient(rgb(40,40,40), black);
     text-align: center;
 }
 

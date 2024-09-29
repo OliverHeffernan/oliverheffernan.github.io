@@ -40,6 +40,20 @@ document.addEventListener('mousemove', onMouseMove);
     }
 }
 
+@keyframes border-radius-anim {
+    0% {
+        border-radius: 0px;
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        border-radius: 0px 0px 650px 650px;
+        opacity: 0%;
+    }
+}
+
 #firstFullScreen {
     width: 100%;
     height: calc(100vh - 66px);
@@ -48,6 +62,8 @@ document.addEventListener('mousemove', onMouseMove);
     align-items: center;
     overflow-x: hidden;
     background: linear-gradient(rgb(20,20,20), rgb(42, 42, 42));
+    animation: border-radius-anim linear;
+    animation-timeline: scroll();
 }
 
 #bigName {
@@ -65,5 +81,4 @@ document.addEventListener('mousemove', onMouseMove);
 h2 {
     color: rgb(0, 145, 255);
 }
-
 </style>
