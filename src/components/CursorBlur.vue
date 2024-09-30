@@ -11,8 +11,16 @@
     width: 200px;
     height: 200px;
     background-color: rgba(0, 100, 207, 0.281);
+    text-rendering: optimizeLegibility;
     filter: blur(100px);
     transition: opacity 0.4s;
+    z-index: 1;
+}
+
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media, _:future, :root #cursorBlur {
+    display: none;
 }
 
 </style>

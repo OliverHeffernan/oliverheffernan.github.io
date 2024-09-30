@@ -85,6 +85,7 @@ export default {
 
     animation: scroll-anim linear;
     animation-timeline: view();
+    z-index: 10;
 }
 
 #container i {

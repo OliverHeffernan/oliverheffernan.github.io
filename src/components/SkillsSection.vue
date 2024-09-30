@@ -55,5 +55,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 5;
 }
 </style>

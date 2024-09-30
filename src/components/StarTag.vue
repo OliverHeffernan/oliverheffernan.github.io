@@ -20,13 +20,15 @@ export default {
     },
     mounted() {
         console.log(this.instance);
-        this.speed = Math.random() * 3 + 0.1;
+        this.speed = Math.random() * 3 + 1;
         const instance = document.getElementById(`star${this.instance}`);
 
         this.pos[0] = Math.random() * window.innerWidth;
         this.pos[1] = Math.random() * window.innerHeight;
 
         let size = 2 * this.speed;
+        instance.style.opacity = (size/8).toString();
+        console.log(instance.style.opacity);
         instance.style.width = size + "px";
         instance.style.height = size + "px";
 
@@ -74,9 +76,10 @@ export default {
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     animation: star-anim linear;
     animation-timeline: scroll();
+    z-index: 0;
 }
 
 </style>

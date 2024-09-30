@@ -50,13 +50,14 @@ footer {
     padding: 20px 30px;
     display: flex;
     flex-wrap: wrap;
+    z-index:10;
 }
 
 footer #centered {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    z-index: 1;
+    z-index: 10;
 }
 
 .column {

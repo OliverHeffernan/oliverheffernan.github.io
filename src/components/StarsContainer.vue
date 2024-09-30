@@ -30,13 +30,13 @@ export default {
 /*hello*/
 #starsContainer {
     cursor: none;
-    position: absolute;
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
     top: 0;
-    left: 0;
+    left: 0; */
     z-index: 0;
     animation: cursor-anim linear;
+    overflow-x: hidden;
     animation-timeline: scroll();
 }
 

@@ -76,7 +76,7 @@ document.addEventListener('mousemove', onMouseMove);
     animation: border-radius-anim linear;
     animation-timeline: scroll();
     position: relative;
-    cursor: none;
+    /* cursor: none; */
 }
 
 #bigName {
