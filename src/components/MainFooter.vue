@@ -56,10 +56,12 @@ footer #centered {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .column {
     padding: 20px 20px;
+    width: max(40vw, 220px);
 }
 
 #projectLinks {
@@ -81,8 +83,9 @@ footer #socialLinks a {
     color: white;
 }
 
-footer h4 i {
+footer h3 i {
     margin: 5px;
+    width: 10px;
 }
 
 footer button {
@@ -94,7 +97,7 @@ footer button {
     margin: 5px 0;
     display: flex;
     cursor: pointer;
-    width: 250px
+    width: 255px
 }
 
 footer button .first-hidden {
@@ -119,6 +122,10 @@ footer button:focus #clipboard-check {
 
 footer button:focus #envelope {
     display: none;
+}
+
+#projectLinks ul li a:hover {
+    font-weight: bold;
 }
 
 </style>

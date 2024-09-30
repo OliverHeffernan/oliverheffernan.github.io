@@ -4,13 +4,22 @@
             <h1 id="bigName">Oliver Heffernan</h1>
             <h2>Software Engineer</h2>
         </div>
+        <CursorBlur />
     </div>
+    <StarsContainer />
 </template>
 
 <script>
 
+import StarsContainer from "./StarsContainer.vue";
+import CursorBlur from "./CursorBlur.vue";
+
 export default {
-    name: 'HomeSpread'
+    name: 'HomeSpread',
+    components: {
+        StarsContainer,
+        CursorBlur
+    }
 }
 
 function onMouseMove(event)
@@ -32,7 +41,7 @@ document.addEventListener('mousemove', onMouseMove);
 
 </script>
 
-<style scoped>
+<style>
 
 @media (pointer:coarse) {
     #nameContainer {
@@ -42,13 +51,15 @@ document.addEventListener('mousemove', onMouseMove);
 
 @keyframes border-radius-anim {
     0% {
+        cursor: none;
         border-radius: 0px;
         opacity: 100%;
     }
-    50% {
-        opacity: 0%;
+    25% {
+        cursor: default;
     }
     100% {
+        cursor: default;
         border-radius: 0px 0px 650px 650px;
         opacity: 0%;
     }
@@ -56,26 +67,28 @@ document.addEventListener('mousemove', onMouseMove);
 
 #firstFullScreen {
     width: 100%;
-    height: calc(100vh - 66px);
+    height: 100vh;
     text-align: center;
     display: grid;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
     background: linear-gradient(rgb(20,20,20), rgb(42, 42, 42));
     animation: border-radius-anim linear;
     animation-timeline: scroll();
+    position: relative;
+    cursor: none;
 }
 
 #bigName {
     font-size: 70px;
-    background: -webkit-linear-gradient(45deg, white, rgb(180, 180, 180));
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: text-shadow 0.8s;
+    color: rgb(255,255,255);
+    transition: all 0.8s;
 }
 
 #bigName:hover {
     text-shadow: 0px 0px 20px rgb(0, 70, 255);
+    color: rgb(204, 228, 255);
 }
 
 h2 {

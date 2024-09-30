@@ -59,6 +59,7 @@ export default {
     color: black;
     text-decoration: none;
     transition: all 0.4s;
+    z-index: 1;
 }
 
 .projectContainer:hover {

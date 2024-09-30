@@ -38,9 +38,15 @@ export default {
         />
         <ProjectContainer
             title="Vue Calculator"
-            blurb="A keyboard based calculator built in Vue. Utilises the math.js library. Check it out in the link below."
+            blurb="A keyboard based calculator built in Vue. Utilises the math.js library. Includes features like syntax highlighting, bracket pair highlighting, super script, multi-line calculations, and a wide range of mathematical functions."
             ghLink="https://github.com/OliverHeffernan/vue-calculator"
             :skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js', 'fa-brands fa-html5', 'fa-brands fa-css3-alt']"
+        />
+        <ProjectContainer
+            title="Ice Cold VS Code theme"
+            blurb="A dark theme for Visual Studio Code, a dark deep slate blue background, and blue tones on the text. It creates a blue vibe without sacrificing readability of code."
+            ghLink="https://github.com/OliverHeffernan/ice-cold-VSCode-theme"
+            :skillIcons="['fa-brands fa-js']"
         />
     </div>
 </div>
