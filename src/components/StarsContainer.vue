@@ -27,7 +27,7 @@ export default {
         cursor: default;
     }
 }
-
+/*hello*/
 #starsContainer {
     cursor: none;
     position: absolute;
