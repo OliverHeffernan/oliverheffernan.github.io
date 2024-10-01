@@ -53,7 +53,7 @@ export default {
     padding: 22px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px black;
-    width: min(250px, calc(100vw - 250px));
+    width: min(250px, calc(100% - 40px));
     margin: 25px;
     text-align: left;
     color: black;

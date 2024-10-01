@@ -38,30 +38,6 @@ export default {
 <style scoped>
 
 
-@media (max-width: 620px) {
-    #container {
-        display: block;
-        width: calc(100% - 200px);
-    }
-
-    i {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-}
-
-@media (min-width: 620px) {
-    #container {
-        display: flex;
-        width: min(calc(100% - 200px), 800px);
-    }
-
-    #container i {
-        margin-right: 50px;
-        text-align: left;
-    }
-}
 
 @keyframes scroll-anim {
     0% {
@@ -76,9 +52,9 @@ export default {
 
 #container {
     background-color: rgb(42, 42, 42);
-    padding: 35px;
+    padding: 27px;
     margin: 10px;
-    border-radius: 27px;
+    border-radius: 15px;
     align-items: center;
     box-shadow: 0px 0px 10px black;
     transition: filter transform 0.5s;
@@ -90,6 +66,8 @@ export default {
 
 #container i {
     font-size: 100px;
+    /* color:rgb(42, 42, 42); */
+    filter: drop-shadow(0px 0px 10px black);
 }
 
 @keyframes underline-anim {
@@ -120,4 +98,28 @@ export default {
     background: linear-gradient(90deg,  rgb(0, 145, 255), transparent);
 }
 
+@media (max-width: 620px) {
+    #container {
+        display: block;
+        width: min(500px, calc(100% - 40px));
+    }
+
+    i {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 620px) {
+    #container {
+        display: flex;
+        width: min(1000px, calc(100% - 200px));
+    }
+
+    #container i {
+        margin-right: 50px;
+        text-align: left;
+    }
+}
 </style>
