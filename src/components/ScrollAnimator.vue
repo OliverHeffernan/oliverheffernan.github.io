@@ -24,7 +24,7 @@ export default {
 }
 
 #progress {
-    z-index: 10;
+    z-index: 20;
     position: fixed;
     height: 10px;
     top: 0;
