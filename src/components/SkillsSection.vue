@@ -38,11 +38,11 @@ export default {
 
 <style scoped>
 h1 {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   width: 100%;
   text-align: center;
   color: black;
-  margin-top: 25px;
+  margin-top: 45px;
 }
 
 #section {
@@ -55,6 +55,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
   z-index: 5;
 }
 </style>

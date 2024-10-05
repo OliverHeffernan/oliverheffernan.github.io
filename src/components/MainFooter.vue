@@ -47,7 +47,7 @@ export default {
 footer {
     background-color: black;
     color: white;
-    padding: 20px 30px;
+    padding: 50px 20px;
     display: flex;
     flex-wrap: wrap;
     z-index:10;

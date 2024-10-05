@@ -54,17 +54,20 @@ export default {
     border-radius: 15px;
     box-shadow: 0px 0px 10px black;
     width: min(250px, calc(100% - 40px));
-    margin: 25px;
     text-align: left;
     color: black;
     text-decoration: none;
     transition: all 0.4s;
     z-index: 1;
+    box-sizing: border-box;
+    margin: 20px;
+    flex: 1 1 calc(33.333% - 10px);
 }
 
 .projectContainer:hover {
     scale: 1.05;
-    box-shadow:rgb(0, 100, 207) 0px 0px 20px;
+    /* box-shadow:rgb(0, 100, 207) 0px 0px 20px; */
+    box-shadow: #0091FF 0px 0px 20px;
 }
 
 .projectContainer p {
