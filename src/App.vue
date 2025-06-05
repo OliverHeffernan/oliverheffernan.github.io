@@ -1,9 +1,9 @@
 <template>
-  <ScrollAnimator />
-  <HomeSpread />
-  <SkillsSection />
-  <ProjectSection />
-  <MainFooter />
+	<ScrollAnimator />
+	<HomeSpread />
+	<SkillsSection />
+	<ProjectSection />
+	<MainFooter />
 </template>
 
 <script>
@@ -14,29 +14,29 @@ import ProjectSection from "./components/ProjectSection.vue";
 import MainFooter from "./components/MainFooter.vue";
 
 export default {
-  name: "App",
-  components: {
-    HomeSpread,
-    SkillsSection,
-    ScrollAnimator,
-    ProjectSection,
-    MainFooter,
-  },
+	name: "App",
+	components: {
+		HomeSpread,
+		SkillsSection,
+		ScrollAnimator,
+		ProjectSection,
+		MainFooter,
+	},
 };
 </script>
 
 <style>
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 body {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
 }
 </style>
