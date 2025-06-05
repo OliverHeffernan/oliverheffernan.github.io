@@ -47,7 +47,7 @@ export default {
 		/>
 
 		<SkillContainer
-			icon="fa-solid fa-terminal"
+			icon="fa-cpp"
 			title="C++"
 			blurb="Using C++ for University projects in ENGR101, including a autonomous burglar alarm and a line following robot project. Learned about solving problems in ways that don't use as much memory, as we were limited by an old Raspberry Pi for the project."
 		/>

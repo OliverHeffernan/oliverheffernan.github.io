@@ -23,7 +23,10 @@ export default {
 <template>
 
 	<div id="container">
-		<i :class="icon"></i>
+		<div class="iconContainer">
+			<img v-if="icon == 'fa-cpp'" class="iconImg" src="../assets/cpp-logo.png">
+			<i :class="icon"></i>
+		</div>
 		<div>
 			<h1> {{ title }} </h1>
 			<div id="underlineContainer">
@@ -36,8 +39,6 @@ export default {
 </template>
 
 <style scoped>
-
-
 
 @keyframes scroll-anim {
 	0% {
@@ -64,10 +65,19 @@ export default {
 	z-index: 10;
 }
 
+.iconContainer {
+	width: 120px;
+}
+
 #container i {
 	font-size: 100px;
 	/* color:rgb(42, 42, 42); */
 	filter: drop-shadow(0px 0px 10px black);
+}
+
+#container .iconImg {
+	width: 90px;
+	height: auto;
 }
 
 @keyframes underline-anim {
@@ -105,6 +115,19 @@ export default {
 		width: calc(100% - 40px);
 	}
 
+	.iconContainer {
+		width: 100%;
+		position: relative;
+		height: 100px;
+	}
+
+	.iconImg {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+
 	i {
 		width: 100%;
 		text-align: center;
@@ -122,5 +145,9 @@ export default {
 		margin-right: 50px;
 		text-align: left;
 	}
+}
+
+.fa-cpp {
+	background-image: url("../assets/cpp-logo.png");
 }
 </style>
