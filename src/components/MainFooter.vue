@@ -15,9 +15,9 @@ export default {
 			<div id="contacts" class="column">
 				<h3>Oliver Heffernan</h3>
 				<div id="socialLinks">
-					<a href="https://github.com/OliverHeffernan"><i class="fa-brands fa-github"></i></a>
-					<a href="https://www.instagram.com/o.heff/"><i class="fa-brands fa-instagram"></i></a>
-					<a href="https://www.linkedin.com/in/oliver-heffernan-b22527357/">
+					<a href="https://github.com/OliverHeffernan" target="_blank"><i class="fa-brands fa-github"></i></a>
+					<a href="https://www.instagram.com/o.heff/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/oliver-heffernan-b22527357/" target="_blank">
 						<i class="fa-brands fa-linkedin"></i>
 					</a>
 				</div>
