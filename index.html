@@ -11,6 +11,12 @@
 	<!-- redirects to deployed site -->
 
 	<script>
-	window.location.href = "https://oliverheffernan.github.io/dist/";
+	const prev = document.referrer;
+	// redirecting to flash-flip if they are trying to confirm their email.
+	if (prev.includes("verify?token")) {
+		window.location.href = "https://oliverheffernan.github.io/flash-flip/dist/index.html#/signin";
+	} else {
+		window.location.href = "https://oliverheffernan.github.io/dist/";
+	}
 	</script>
 </html>
