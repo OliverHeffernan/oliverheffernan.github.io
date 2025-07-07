@@ -19,7 +19,6 @@ export default {
 		}
 	},
 	mounted() {
-		console.log(this.instance);
 		this.speed = Math.random() * 3 + 1;
 		const instance = document.getElementById(`star${this.instance}`);
 
@@ -28,7 +27,6 @@ export default {
 
 		let size = 2 * this.speed;
 		instance.style.opacity = (size/8).toString();
-		console.log(instance.style.opacity);
 		instance.style.width = size + "px";
 		instance.style.height = size + "px";
 

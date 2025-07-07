@@ -6,23 +6,19 @@
 	<MainFooter />
 </template>
 
-<script>
+<script setup>
 import ScrollAnimator from "./components/ScrollAnimator.vue";
 import HomeSpread from "./components/HomeSpread.vue";
 import SkillsSection from "./components/SkillsSection.vue";
 import ProjectSection from "./components/ProjectSection.vue";
 import MainFooter from "./components/MainFooter.vue";
 
-export default {
-	name: "App",
-	components: {
-		HomeSpread,
-		SkillsSection,
-		ScrollAnimator,
-		ProjectSection,
-		MainFooter,
-	},
-};
+import { onMounted } from "vue";
+
+onMounted(() => {
+	console.log(document.referrer);
+});
+
 </script>
 
 <style>
