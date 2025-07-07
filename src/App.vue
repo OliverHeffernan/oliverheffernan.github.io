@@ -16,7 +16,11 @@ import MainFooter from "./components/MainFooter.vue";
 import { onMounted } from "vue";
 
 onMounted(() => {
-	console.log(document.referrer);
+	const prev = document.referrer;
+	// redirecting to flash-flip if they are trying to confirm their email.
+	if (prev.contains("verify?token")) {
+		window.location.href = "https://oliverheffernan.github.io/flash-flip/dist/index.html#/signin";
+	}
 });
 
 </script>
