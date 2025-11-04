@@ -49,6 +49,7 @@ export default {
 
 .projectContainer {
 	/* background-color: rgb(42,42,42); */
+    position: relative;
 	background-color: white;
 	padding: 22px;
 	border-radius: 15px;
@@ -81,10 +82,17 @@ export default {
 
 .projectContainer p {
 	color: black;
+    padding-bottom: 40px;
 }
 
 .projectContainer i {
 	color: rgb(0, 100, 207);
+}
+
+.icons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
 }
 
 </style>

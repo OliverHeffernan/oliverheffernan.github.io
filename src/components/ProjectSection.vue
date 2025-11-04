@@ -18,6 +18,12 @@ export default {
 
 		<div id="projectsContainer">
 			<ProjectContainer
+				title="PaperWeight"
+				blurb="An app to upload written workout logs, and digitise them using openAI API, and a supabase backend."
+				ghLink="https://github.com/OliverHeffernan/PaperWeight"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js', 'fa-solid fa-database']"
+			/>
+			<ProjectContainer
 				title="DataFlow"
 				blurb="A spreadsheet app with vim-like motions. Built in Tauri, with Vue front-end and Rust back-end."
 				ghLink="https://github.com/OliverHeffernan/DataFlow"
@@ -51,7 +57,7 @@ export default {
 				title="Flash Flip"
 				blurb="A flashcard web-app targetted toward students. Users can download their flashcard sets in JSON format to reupload later, or as pdfs, to view offline or print."
 				ghLink="https://github.com/OliverHeffernan/flash-flip"
-				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js']"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js', 'fa-solid fa-database']"
 			/>
 			<ProjectContainer
 				title="Markdown To HTML Converter"
@@ -60,7 +66,7 @@ export default {
 				:skillIcons="['fa-brands fa-js', 'fa-brands fa-html5', 'fa-brands fa-css3-alt']"
 			/>
 			<ProjectContainer
-				title="Vue Calculator"
+				title="Calc"
 				blurb="A keyboard based calculator built in Vue. Utilises the math.js library. Includes features like syntax highlighting, bracket pair highlighting, super script, multi-line calculations, and a wide range of mathematical functions."
 				ghLink="https://oliverheffernan.github.io/vue-calculator/"
 				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js']"

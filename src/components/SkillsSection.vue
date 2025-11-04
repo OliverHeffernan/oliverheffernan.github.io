@@ -52,6 +52,17 @@ export default {
 			blurb="Using C++ for University projects in ENGR101, including a autonomous burglar alarm and a line following robot project. Learned about solving problems in ways that don't use as much memory, as we were limited by an old Raspberry Pi for the project."
 		/>
 
+		<SkillContainer
+			icon="fa-solid fa-database"
+			title="Supabase"
+			blurb="I have used Supabase as a backend for two of my projects - 'PaperWeight' and 'DataFlow'. I used it to store user data, authenticate users, and handle backend functions like communicating with external APIs, without exposing API keys to the front-end."
+		/>
+
+        <SkillContainer
+            icon="fa-brands fa-python"
+            title="Python"
+            blurb="I have used Python for various personal projects, including data analysis and automation scripts. I have used it to webscrape data and automate repetitive tasks. Including extracting house prices from homes.co.nz"
+        />
 	</div>
 </template>
 
