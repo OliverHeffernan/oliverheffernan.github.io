@@ -98,13 +98,13 @@ export default {
 
 .icons {
     position: absolute;
-    bottom: 5px;
-    right: 6px;
-    padding: 10px;
+    bottom: 8px;
+    right: 8px;
+    padding: 5px;
     background-color: #06BFF4;
-    border-radius: 17px;
+    border-radius: 10px;
     display: flex;
-    gap: 8px;
+    gap: 6px;
 }
 
 h2 {

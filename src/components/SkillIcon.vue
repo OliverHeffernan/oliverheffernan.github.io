@@ -20,7 +20,7 @@ export default {
 
 i {
 	margin: 5px;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 </style>

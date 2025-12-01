@@ -21,7 +21,7 @@ export default {
 				title="PaperWeight"
 				blurb="An app to upload written workout logs, and digitise them using openAI API, and a supabase backend."
 				ghLink="https://github.com/OliverHeffernan/PaperWeight"
-				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js', 'fa-solid fa-database']"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js', 'devicon-supabase-plain']"
 			/>
 			<ProjectContainer
 				title="DataFlow"
@@ -57,7 +57,7 @@ export default {
 				title="Flash Flip"
 				blurb="A flashcard web-app targetted toward students. Users can download their flashcard sets in JSON format to reupload later, or as pdfs, to view offline or print."
 				ghLink="https://github.com/OliverHeffernan/flash-flip"
-				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js', 'fa-solid fa-database']"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js', 'devicon-supabase-plain']"
 			/>
 			<ProjectContainer
 				title="Markdown To HTML Converter"
@@ -81,7 +81,7 @@ export default {
 				title="Ice Cold Neovim theme"
 				blurb="An improved version of 'Ice Cold VS Code theme' for Neovim. Written in lua."
 				ghLink="https://github.com/OliverHeffernan/ice-cold.nvim"
-				:skillIcons="[]"
+				:skillIcons="['devicon-vim-plain', 'devicon-lua-plain']"
 			/>
 		</div>
 	</div>
