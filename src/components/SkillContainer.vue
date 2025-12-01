@@ -1,5 +1,9 @@
-<script>
+<script setup>
+import { defineProps } from 'vue';
+import DevIcon from './DevIcon.vue';
+defineProps(['icon', 'title', 'blurb']);
 
+/*
 export default {
 	name: 'SkillContainer',
 	props: {
@@ -17,6 +21,7 @@ export default {
 		}
 	}
 }
+*/
 
 </script>
 
@@ -25,11 +30,14 @@ export default {
 	<div id="container">
 		<div class="iconContainer">
 			<!--<img v-if="icon == 'fa-cpp'" class="iconImg" src="../assets/cpp-logo.png">-->
+            <!--
             <i :class="`devicon-${icon}-plain`">
                 <img v-if="icon != 'python'" class="colourIcon" :src="`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`" />
                 <img v-else class="colourIcon python" :src="`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`" />
             </i>
-          
+            -->
+            <DevIcon :icon="icon" :outline="true" />
+
 		</div>
 		<div>
 			<h1> {{ title }} </h1>
@@ -75,36 +83,14 @@ export default {
 	width: 120px;
 }
 
-#container i {
-	font-size: 100px;
-	/* color:rgb(42, 42, 42); */
-	/*filter: drop-shadow(0px 0px 10px black);*/
-    color: transparent;
-    -webkit-text-stroke: 1px #787878;
-    transition: all 0.4s;
-    scale: 1;
-    position: relative;
-}
-
-#container:hover i {
-    color: #06BFF4;
-    -webkit-text-stroke: 0px transparent;
-    scale: 1.1;
-}
-
-#container .iconImg {
-	width: 90px;
-	height: auto;
-}
-
 @keyframes underline-anim {
-0% {
-	width: 0px;
-}
+    0% {
+        width: 0px;
+    }
 
-100% {
-	width: 40%;
-}
+    100% {
+        width: 40%;
+    }
 }
 
 #underlineContainer {
@@ -144,7 +130,6 @@ export default {
 		transform: translateX(-50%);
 	}
 
-
 	i {
 		width: 100%;
 		text-align: center;
@@ -166,26 +151,6 @@ export default {
 
 .fa-cpp {
 	background-image: url("../assets/cpp-logo.png");
-}
-
-.colourIcon {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity 0.4s;
-}
-
-
-#container:hover .colourIcon {
-    opacity: 1;
-}
-
-#container:hover i {
-    color: transparent;
-    -webkit-text-stroke: 0px transparent;
 }
 
 .python {
