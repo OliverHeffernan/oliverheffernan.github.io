@@ -99,7 +99,8 @@ footer h3 i {
 }
 
 footer button {
-	background-color: rgb(0, 100, 207);
+	/*background-color: rgb(0, 100, 207);*/
+    background-color: #06BFF4;
 	border: none;
 	border-radius: 3px;
 	color: white;

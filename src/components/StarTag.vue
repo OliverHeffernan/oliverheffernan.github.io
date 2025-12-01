@@ -70,7 +70,8 @@ export default {
 }
 
 .star {
-	background-color: white;
+    position: relative;
+	background-color: rgba(255,255,255,0.8);
 	height: 5px;
 	width: 5px;
 	border-radius: 50%;

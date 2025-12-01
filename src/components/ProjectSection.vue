@@ -21,13 +21,13 @@ export default {
 				title="PaperWeight"
 				blurb="An app to upload written workout logs, and digitise them using openAI API, and a supabase backend."
 				ghLink="https://github.com/OliverHeffernan/PaperWeight"
-				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js', 'fa-solid fa-database']"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js', 'fa-solid fa-database']"
 			/>
 			<ProjectContainer
 				title="DataFlow"
 				blurb="A spreadsheet app with vim-like motions. Built in Tauri, with Vue front-end and Rust back-end."
 				ghLink="https://github.com/OliverHeffernan/DataFlow"
-				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js', 'fa-brands fa-rust']"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js', 'fa-brands fa-rust']"
 			/>
 			<ProjectContainer
 				title="Lone Wolf: World War 2"
@@ -39,49 +39,49 @@ export default {
 				title="movieGame"
 				blurb="A simple guess the movie game. Makes requests to a Rust backend to get data from the TMDb API."
 				ghLink="https://github.com/OliverHeffernan/movieGame"
-				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js', 'fa-brands fa-rust']"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js', 'fa-brands fa-rust']"
 			/>
 			<ProjectContainer
 				title="RaceTracker"
 				blurb="A free to use running race organiser. Fully editable results, exportable pdf results. All data is handled through JavaScript on the client-side, so your information is safe."
 				ghLink="https://oliverheffernan.github.io/Racetracker/"
-				:skillIcons="['fa-brands fa-js', 'fa-brands fa-html5', 'fa-brands fa-css3-alt']"
+				:skillIcons="['fa-brands fa-square-js', 'fa-brands fa-html5', 'fa-brands fa-css3-alt']"
 			/>
 			<ProjectContainer
 				title="Block.js Library"
 				blurb="Block.js is an open-source, lightweight, simple-to-use JavaScript front-end framework. It makes it extremely simple to have multiple similar elements, without extremely repetitive code."
 				ghLink="https://github.com/OliverHeffernan/block-js-library"
-				:skillIcons="['fa-brands fa-js']"
+				:skillIcons="['fa-brands fa-square-js']"
 			/>
 			<ProjectContainer
 				title="Flash Flip"
 				blurb="A flashcard web-app targetted toward students. Users can download their flashcard sets in JSON format to reupload later, or as pdfs, to view offline or print."
 				ghLink="https://github.com/OliverHeffernan/flash-flip"
-				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js', 'fa-solid fa-database']"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js', 'fa-solid fa-database']"
 			/>
 			<ProjectContainer
 				title="Markdown To HTML Converter"
 				blurb="A simple tool that converts markdown code to html, and vice versa."
 				ghLink="https://oliverheffernan.github.io/markdown-to-html-translator/"
-				:skillIcons="['fa-brands fa-js', 'fa-brands fa-html5', 'fa-brands fa-css3-alt']"
+				:skillIcons="['fa-brands fa-square-js', 'fa-brands fa-html5', 'fa-brands fa-css3-alt']"
 			/>
 			<ProjectContainer
 				title="Calc"
 				blurb="A keyboard based calculator built in Vue. Utilises the math.js library. Includes features like syntax highlighting, bracket pair highlighting, super script, multi-line calculations, and a wide range of mathematical functions."
 				ghLink="https://oliverheffernan.github.io/vue-calculator/"
-				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-js']"
+				:skillIcons="['fa-brands fa-vuejs', 'fa-brands fa-square-js']"
 			/>
 			<ProjectContainer
 				title="Ice Cold VS Code theme"
 				blurb="A dark theme for Visual Studio Code, a dark deep slate blue background, and blue tones on the text. It creates a blue vibe without sacrificing readability of code."
 				ghLink="https://github.com/OliverHeffernan/ice-cold-VSCode-theme"
-				:skillIcons="['fa-brands fa-js']"
+				:skillIcons="['fa-brands fa-square-js']"
 			/>
 			<ProjectContainer
 				title="Ice Cold Neovim theme"
 				blurb="An improved version of 'Ice Cold VS Code theme' for Neovim. Written in lua."
 				ghLink="https://github.com/OliverHeffernan/ice-cold.nvim"
-				:skillIcons="['fa-brands fa-lua']"
+				:skillIcons="[]"
 			/>
 		</div>
 	</div>
@@ -121,8 +121,9 @@ h3 {
 
 #projectsSection {
 	padding-top: 35px;
-	background: linear-gradient(rgb(40,40,40), black);
+	background: linear-gradient(#212121, black);
 	text-align: center;
+    background-color: #212121;
 }
 
 </style>

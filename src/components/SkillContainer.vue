@@ -24,8 +24,12 @@ export default {
 
 	<div id="container">
 		<div class="iconContainer">
-			<img v-if="icon == 'fa-cpp'" class="iconImg" src="../assets/cpp-logo.png">
-			<i :class="icon"></i>
+			<!--<img v-if="icon == 'fa-cpp'" class="iconImg" src="../assets/cpp-logo.png">-->
+            <i :class="`devicon-${icon}-plain`">
+                <img v-if="icon != 'python'" class="colourIcon" :src="`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`" />
+                <img v-else class="colourIcon python" :src="`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`" />
+            </i>
+          
 		</div>
 		<div>
 			<h1> {{ title }} </h1>
@@ -57,7 +61,9 @@ export default {
 	margin: 10px;
 	border-radius: 15px;
 	align-items: center;
-	box-shadow: 0px 0px 10px black;
+	/*box-shadow: 0px 0px 10px black;*/
+    border: 1px solid rgb(120,120,120);
+    box-shadow: 0px 2px 2px rgb(120,120,120);
 	transition: filter transform 0.5s;
 
 	animation: scroll-anim linear;
@@ -72,7 +78,18 @@ export default {
 #container i {
 	font-size: 100px;
 	/* color:rgb(42, 42, 42); */
-	filter: drop-shadow(0px 0px 10px black);
+	/*filter: drop-shadow(0px 0px 10px black);*/
+    color: transparent;
+    -webkit-text-stroke: 1px #787878;
+    transition: all 0.4s;
+    scale: 1;
+    position: relative;
+}
+
+#container:hover i {
+    color: #06BFF4;
+    -webkit-text-stroke: 0px transparent;
+    scale: 1.1;
 }
 
 #container .iconImg {
@@ -92,7 +109,7 @@ export default {
 
 #underlineContainer {
 	height: 6px;
-	background: linear-gradient(90deg, rgb(0, 145, 255), transparent);
+	background: linear-gradient(90deg, #06BFF4, transparent);
 	transform-origin: 0 50%;
 	overflow-x: hidden;
 	border-radius: 3px;
@@ -105,7 +122,7 @@ export default {
 #underline {
 	width: 100%;
 	height: 6%;
-	background: linear-gradient(90deg,  rgb(0, 145, 255), transparent);
+	background: linear-gradient(90deg,  #06BFF4, transparent);
 }
 
 @media (max-width: 620px) {
@@ -149,5 +166,29 @@ export default {
 
 .fa-cpp {
 	background-image: url("../assets/cpp-logo.png");
+}
+
+.colourIcon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+
+#container:hover .colourIcon {
+    opacity: 1;
+}
+
+#container:hover i {
+    color: transparent;
+    -webkit-text-stroke: 0px transparent;
+}
+
+.python {
+    scale: 1.2;
 }
 </style>
