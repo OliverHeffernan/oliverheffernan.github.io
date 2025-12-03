@@ -60,24 +60,27 @@ export default {
 
 <style>
 
-@keyframes star-anim {
+@keyframes starAnim {
 0% {
-	opacity: 100%;
+	background-color: rgba(255,255,255,0.8);
+}
+20% {
+	background-color: rgba(255,255,255,0);
 }
 100% {
-	opacity: 5%;
+    background-color: rgba(255,255,255,0);
 }
 }
 
 .star {
-    position: relative;
 	background-color: rgba(255,255,255,0.8);
+    position: relative;
 	height: 5px;
 	width: 5px;
 	border-radius: 50%;
 	position: absolute;
-	animation: star-anim linear;
-	animation-timeline: scroll();
+	animation: starAnim linear;
+	animation-timeline: scroll(root);
 	z-index: 0;
 }
 

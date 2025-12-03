@@ -3,25 +3,6 @@ import { defineProps } from 'vue';
 import DevIcon from './DevIcon.vue';
 defineProps(['icon', 'title', 'blurb']);
 
-/*
-export default {
-	name: 'SkillContainer',
-	props: {
-		icon: {
-			type: String,
-			required: true
-		},
-		title: {
-			type: String,
-			required: true
-		},
-		blurb: {
-			type: String,
-			required: true
-		}
-	}
-}
-*/
 
 </script>
 
@@ -29,15 +10,7 @@ export default {
 
 	<div id="container">
 		<div class="iconContainer">
-			<!--<img v-if="icon == 'fa-cpp'" class="iconImg" src="../assets/cpp-logo.png">-->
-            <!--
-            <i :class="`devicon-${icon}-plain`">
-                <img v-if="icon != 'python'" class="colourIcon" :src="`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`" />
-                <img v-else class="colourIcon python" :src="`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`" />
-            </i>
-            -->
             <DevIcon :icon="icon" :outline="true" />
-
 		</div>
 		<div>
 			<h1> {{ title }} </h1>
@@ -80,7 +53,10 @@ export default {
 }
 
 .iconContainer {
-	width: 120px;
+    display: block;
+	width: 110px;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 @keyframes underline-anim {

@@ -60,12 +60,15 @@ defineProps(["icon", "font_size", "outline"]);
     animation: colourIconAnim linear;
     animation-timeline: view();
     transition: opacity 0.4s;
+    opacity: 1;
 }
 
 .icon {
     position: relative;
     scale: 1;
     transition: all 0.4s;
+    margin: 0 !important;
+    margin-right: 8px !important;
 }
 
 .python {
@@ -96,8 +99,8 @@ defineProps(["icon", "font_size", "outline"]);
 .outline {
     color: transparent;
     -webkit-text-stroke: 1px #787878;
-    animation: outlineAnim linear;
-    animation-timeline: view();
+    /*animation: outlineAnim linear;*/
+    /*animation-timeline: view();*/
 }
 
 .filled {
