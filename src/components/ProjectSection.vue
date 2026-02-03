@@ -48,6 +48,18 @@ export default {
 				:skillIcons="['fa-brands fa-square-js', 'fa-brands fa-html5', 'fa-brands fa-css3-alt']"
 			/>
 			<ProjectContainer
+				title="mdPreview"
+				blurb="A native macOS application built using the Cocoa API in Objective-C. It allows users to quickly view markdown files as rendered HTML, with support for light and dark modes. The app can be set as the default application for opening markdown files."
+				ghLink="https://github.com/OliverHeffernan/mdPreview"
+				:skillIcons="['devicon-apple-original', 'devicon-objectivec-plain']"
+			/>
+			<ProjectContainer
+				title="Comments.nvim"
+				blurb="A plugin for neovim that allows you to comment any line of code in a wide range of languages, with a simple command."
+				ghLink="https://github.com/OliverHeffernan/comments.nvim"
+				:skillIcons="['devicon-vim-plain', 'devicon-lua-plain']"
+			/>
+			<ProjectContainer
 				title="Block.js Library"
 				blurb="Block.js is an open-source, lightweight, simple-to-use JavaScript front-end framework. It makes it extremely simple to have multiple similar elements, without extremely repetitive code."
 				ghLink="https://github.com/OliverHeffernan/block-js-library"

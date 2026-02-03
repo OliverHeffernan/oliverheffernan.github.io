@@ -34,17 +34,6 @@ export default {
 					</h3>
 				</button>
 			</div>
-			<!--
-			<div id="projectLinks" class="column">
-				<h4>Project Links</h4>
-				<ul>
-					<li><a href="https://github.com/OliverHeffernan/Racetracker">RaceTracker</a></li>
-					<li><a href="https://github.com/OliverHeffernan/block-js-library">Block.js Library</a></li>
-					<li><a href="https://github.com/OliverHeffernan/markdown-to-html-translator">Markdown To HTML Converter</a></li>
-					<li><a href="https://github.com/OliverHeffernan/vue-calculator">Vue Calculator</a></li>
-				</ul>
-			</div>
-			-->
 		</div>
 	</footer>
 </template>
