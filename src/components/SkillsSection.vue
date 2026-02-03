@@ -14,10 +14,12 @@ export default {
 		<h1>My Skills</h1>
 		<SkillContainer
 			icon="javascript"
-			title="JavaScript"
+			title="JavaScript/TypeScript"
 			blurb="I have a lot of experience with JavaScript. A project that I created using JavaScript was 'RaceTracker', this is in a public repository on my github profile.
 			<br><br>
-			I have also created a very basic javaScript front-end framework called 'block.js', also a public repository on my github profile. "
+			I have also created a very basic javaScript front-end framework called 'block.js', also a public repository on my github profile.
+			<br></br>
+			I have also used TypeScript extensively in my projects, including PaperWeight."
 		/>
 
 		<SkillContainer
@@ -31,7 +33,7 @@ export default {
 		<SkillContainer
 			icon="vuejs"
 			title="Vue"
-			blurb="I have built a wide range of projects using the Vue front-end framework. Including this website, a spreadsheet app, a calculator app, and a guess-the-movie game, which interacts with a rust back end."
+			blurb="I have built a wide range of projects using the Vue front-end framework. Including this website, a spreadsheet app (DataFlow), a calculator app, a weight training app (PaperWeight), and a guess-the-movie game, which interacts with a rust back end."
 		/>
 
 		<SkillContainer
